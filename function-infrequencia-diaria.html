@@ -11,7 +11,13 @@
 <body>
     
     <header>
-        <h2>cabeçalho</h2>
+        <div id="logo">
+            <img src="img/logo-gb.png" alt="logo-gb">
+        </div>
+        <div id="nome-escola">
+            <h2>EEMTI GERALDO BENONI GOMES SILVEIRA</h2><br>
+            <h3>INEP: 23252600</h3>
+        </div>  
     </header>
 
     <main>
@@ -26,43 +32,43 @@
             </tr>
             <tr>
                 <td class="turma">1º A Integral</td>
-                <td>37</td>
-                <td><input type="text" name="turma_1a" id="1a"></td>
-                <td></td>
+                <td id="_1a">37</td>
+                <td><input type="text" name="turma_1a" id="1a" onkeyup="calcularInfreq()"></td>
+                <td id="res_1a"></td>
             </tr>
             <tr>
                 <td class="turma">1º B Integral</td>
-                <td>38</td>
+                <td id="_1b">38</td>
                 <td><input type="text" name="turma_1b" id="1b"></td>
-                <td></td>
+                <td id="res_1b"></td>
             </tr>
             <tr>
                 <td class="turma">2º A Manhã</td>
-                <td>37</td>
+                <td id="_2a">37</td>
                 <td><input type="text" name="turma_2a" id="2a"></td>
-                <td></td>
+                <td id="res_2a"></td>
             </tr>
             <tr>
                 <td class="turma">2º B Tarde</td>
-                <td>36</td>
+                <td id="_2b">36</td>
                 <td><input type="text" name="turma_2b" id="2b"></td>
-                <td></td>
+                <td id="res_2b"></td>
             </tr>
             <tr>
                 <td class="turma">3º A Manhã</td>
-                <td>37</td>
+                <td id="_3a">37</td>
                 <td><input type="text" name="turma_3a" id="3a"></td>
-                <td></td>
+                <td id="res_3a"></td>
             </tr>
             <tr>
                 <td class="turma">3º B Tarde</td>
-                <td>34</td>
+                <td id="_3b">34</td>
                 <td><input type="text" name="turma_3b" id="3b"></td>
-                <td></td>
+                <td id="res_3a"></td>
             </tr>
             <tr>
                 <td style="font-weight: bolder;">Total</td>
-                <td>219</td>
+                <td id="total">219</td>
                 <td>criar função soma</td>
                 <td>criar função soma</td>
             </tr>
@@ -77,8 +83,8 @@
 
     
    
-    <!--
+ 
     <script src="js/script.js"></script>
-    -->
+  
 </body>
 </html>

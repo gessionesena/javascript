@@ -1,10 +1,26 @@
-function calcularInfreq(qtdAlunoPresente, qtdAlunoTurma){
-    var infreq = qtdAlunoTurma - qtdAlunoPresente;
+
+function calcularInfreq(alunos, totalTurma){
     
-    return infreq;
+    var alunos = ''
+    switch(alunos){
+        case
+    }
+    var alunos = document.getElementById('1a').value;
+    var totalTurma = document.getElementById('_1a').text;
+
+
+    var infreq = totalTurma - alunos;
+
+
+    
 }
 
-var qtdAlunoPresente = prompt('Qtd de alunos presentes na sala: ');
-var qtdAlunoTurma = prompt('Qtd de alunos da turma: ');
 
-var infreq = calcularInfreq(qtdAlunoPresente, qtdAlunoTurma);
+/*
+var infreq = calcularInfreq(alunos, totalTurma);
+
+console.log(alunos)
+console.log(totalTurma)
+console.log(infreq)
+
+*/

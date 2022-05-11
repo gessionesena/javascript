@@ -14,10 +14,24 @@ main {
 }
 
 header {
-    padding-top: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
     height: 100px;
-    border: 1px solid red;
+    background-color: rgba(55, 172, 61, 0.966);
+}
+
+#logo img{
+    width: 220px;
+    height: 80px; 
+    filter: drop-shadow(0 0 3px #fff);
+}
+
+#nome-escola {
+    margin-left: 100px;
+    color: white;
 }
 table {
     width: 70%;
@@ -36,7 +50,7 @@ td {
 
 .turma {
     width: 200px;
-    background-color: rgb(176, 185, 185);
+    background-color: rgb(171, 184, 180);
     padding: 5px;
     text-align: left;
     font-size: 1.2em;
@@ -56,9 +70,9 @@ input {
 
 
 footer {
-    background-color: black;
+    background-color: rgb(216, 148, 0);
     padding: 10px 0px;
-    color: white;
+    color: rgb(7, 7, 7);
     text-align: center;
 }
 
