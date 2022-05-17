@@ -13,6 +13,7 @@ main {
     text-align: center;
 }
 
+/*CABEÇALHO*/
 header {
     display: flex;
     flex-direction: row;
@@ -33,13 +34,15 @@ header {
     margin-left: 100px;
     color: white;
 }
+
+/*TABELA*/
 table {
     width: 70%;
-    margin: 30px auto;
+    margin: 30px auto 10px;
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-collapse: collapse;
     text-align: center;
 }
@@ -47,27 +50,77 @@ td {
     height: 30px;
 }
 
+tr:hover {
+    background-color: rgba(184, 226, 186, 0.966);
+}
+
+.header {
+    background-color: rgba(55, 172, 61, 0.966);
+    font-size: 1em;
+    color: #fff;
+    padding: 7px 0px;
+}
+
 
 .turma {
     width: 200px;
-    background-color: rgb(171, 184, 180);
+    background-color: rgba(125, 214, 130, 0.966);
     padding: 5px;
     text-align: left;
     font-size: 1.2em;
     font-weight: bold;
 }
 
+#linha-totais {
+    background-color: rgba(55, 172, 61, 0.966);
+}
+
+/*ÁREA DE TEXTO PARA COLAR NO WHATSAPP*/
+
+#area-texto-whats{
+    height: 130px;
+}
+
 input {
-    width: 15%;
+    width: 35%;
     border-radius: 5px;
-    border-color: darkgrey;
-    border: 1px solid;
+    border: 0.2px solid darkgray;
     padding: 5px;
     text-align: center;
-    
+    font-size: 16px; 
+}
+
+input.qtd-alunos {
+    border: none;
+    font-size: 18px;
+    color: black;
+}
+
+/*BOTÕES*/
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 200px;
+    background-color: rgba(55, 172, 61, 0.966);
+    padding: 8px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+button:hover {
+    background-color: darkgrey;
 }
 
 
+
+/*RODAPÉ*/
 
 footer {
     background-color: rgb(216, 148, 0);

@@ -25,55 +25,63 @@
 
         <table>
             <tr>
-                <th class="turma">Turma</th>
-                <th>Qtd total de alunos da turma</th>
-                <th>Qtd de alunos presentes/dia</th>
-                <th>Infrequência/dia</th>
+                <th class="header">Turma</th>
+                <th class="header">Qtd total de alunos da turma</th>
+                <th class="header">Qtd de alunos presentes/dia</th>
+                <th class="header">Infrequência/dia</th>
             </tr>
             <tr>
                 <td class="turma">1º A Integral</td>
-                <td><input type="text" id="_1a" value="37" disabled="disabled"></td>
-                <td><input type="text" name="turma_1a" id="1a" ></td><!--onkeyup="infreq_1a()"-->
+                <td><input class="qtd-alunos" type="text" id="_1a" value="37" disabled="disabled"></td>
+                <td><input type="text" name="turma_1a" id="1a" placeholder="0"></td><!--onkeyup="infreq_1a()"-->
                 <td id="res_1a"></td>
             </tr>
             <tr>
                 <td class="turma">1º B Integral</td>
-                <td><input type="text" id="_1b" value="38" disabled="disabled"></td>
-                <td><input type="text" name="turma_1b" id="1b"></td>
+                <td><input class="qtd-alunos" type="text" id="_1b" value="38" disabled="disabled"></td>
+                <td><input type="text" name="turma_1b" id="1b" placeholder="0"></td>
                 <td id="res_1b"></td>
             </tr>
             <tr>
                 <td class="turma">2º A Manhã</td>
-                <td><input type="text" id="_2a" value="37" disabled="disabled"></td>
-                <td><input type="text" name="turma_2a" id="2a"></td>
+                <td><input class="qtd-alunos" type="text" id="_2a" value="37" disabled="disabled"></td>
+                <td><input type="text" name="turma_2a" id="2a" placeholder="0"></td>
                 <td id="res_2a"></td>
             </tr>
             <tr>
+                <td class="turma">3º A Manhã</td>
+                <td><input class="qtd-alunos" type="text" id="_3a" value="37" disabled="disabled"></td>
+                <td><input type="text" name="turma_3a" id="3a" placeholder="0"></td>
+                <td id="res_3a"></td>
+            </tr>
+            <tr>
                 <td class="turma">2º B Tarde</td>
-                <td><input type="text" id="_2b" value="36" disabled="disabled"></td>
-                <td><input type="text" name="turma_2b" id="2b"></td>
+                <td><input class="qtd-alunos" type="text" id="_2b" value="36" disabled="disabled"></td>
+                <td><input type="text" name="turma_2b" id="2b" placeholder="0"></td>
                 <td id="res_2b"></td>
             </tr>
             <tr>
-                <td class="turma">3º A Manhã</td>
-                <td><input type="text" id="_3a" value="37" disabled="disabled"></td>
-                <td><input type="text" name="turma_3a" id="3a"></td>
-                <td id="res_3a"></td>
-            </tr>
-            <tr>
                 <td class="turma">3º B Tarde</td>
-                <td><input type="text" id="_3b" value="34" disabled="disabled"></td>
-                <td><input type="text" name="turma_3b" id="3b"></td>
-                <td id="res_3a"></td>
+                <td><input class="qtd-alunos" type="text" id="_3b" value="34" disabled="disabled"></td>
+                <td><input type="text" name="turma_3b" id="3b" placeholder="0"></td>
+                <td id="res_3b"></td>
             </tr>
-            <tr>
+            <tr id="linha-totais">
                 <td style="font-weight: bolder;">Total</td>
                 <td id="total">219</td>
-                <td>criar função soma</td>
-                <td>criar função soma</td>
+                <td id="total-presentes">criar função soma</td>
+                <td id="total-infrequencia">criar função soma</td>
             </tr>
         </table>
-
+        
+        <div id="area-texto-whats">
+            Clique 2x no botão "Calcular infrequência" para gerar o texto a ser colado no WhatsApp
+        </div>
+        
+        <div id="botoes">
+            <button type="submit" id="botao">Calcular infrequência</button>
+            <button type="submit" id="botao-whatsapp">Abrir WhatsApp</button>
+        </div>
         
     </main>
 
