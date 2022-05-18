@@ -13,6 +13,8 @@ main {
     text-align: center;
 }
 
+
+
 /*CABEÇALHO*/
 header {
     display: flex;
@@ -76,6 +78,10 @@ tr:hover {
 }
 
 /*ÁREA DE TEXTO PARA COLAR NO WHATSAPP*/
+
+li {
+    list-style: none;
+}
 
 #area-texto-whats{
     height: 130px;
