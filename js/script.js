@@ -76,19 +76,21 @@ function soma(){
     
         var qtd_alunosTurma = parseInt(document.getElementById(id_turma[i]).value);
         cont = cont + qtd_alunosTurma; 
-        console.log(qtd_alunosTurma);
+       
         console.log(cont);
-        var qtd_alunosPresentes = parseInt(document.getElementById(id_alunos[i]).value);
+
+        /*var qtd_alunosPresentes = parseInt(document.getElementById(id_alunos[i]).value);
         cont2 =cont2 + qtd_alunosPresentes;
         console.log(qtd_alunosPresentes);
         console.log(cont2);
         var qtd_alunosInfreq = qtd_alunosTurma - qtd_alunosPresentes;
         cont3 = cont3 + qtd_alunosInfreq;
         console.log(qtd_alunosInfreq);
-        console.log(cont3);
+        console.log(cont3);*/
     }
     
-    //document.getElementById('total').innerHTML(cont);
+    var total = document.querySelector('#total');
+    
     //document.querySelector('#total-presentes').innerText(cont2);
     //document.querySelector('#total-infrequencia').innerText(cont3);
 }
