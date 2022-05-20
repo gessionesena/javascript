@@ -1,0 +1,48 @@
+@media screen and (max-width:750px){
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 120px;
+        justify-content: center;
+        
+    }
+
+    #nome-escola {
+        margin:auto;
+        text-align: center;
+    }
+
+    #nome-escola h2, h3{
+        font-size: 0.9em;    
+    }
+    
+    table {
+        width: 80%;
+        margin: 15px auto 10px;
+    }
+
+    .turma {
+        font-size: 1em;
+    }
+
+
+    input {
+        font-size: 14px; 
+    }
+
+    input.qtd-alunos {
+        font-size: 14px;
+    }
+
+    #botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        margin-left: 8px;
+    }
+}
+

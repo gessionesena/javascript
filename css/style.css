@@ -5,11 +5,12 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 500px;
 }
 
 main {
     padding: 15px 0px;
-    height: 76vh;
+    /*height: 75vh;*/
     text-align: center;
 }
 

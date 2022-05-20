@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infrequência Diária</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
@@ -33,44 +34,44 @@
             <tr>
                 <td class="turma">1º A Integral</td>
                 <td><input class="qtd-alunos" type="text" id="_1a" value="37" disabled="disabled"></td>
-                <td><input type="text" name="turma_1a" id="1a" placeholder="0"></td><!--onkeyup="infreq_1a()"-->
+                <td><input type="text" id="1a" placeholder="0"></td><!--onkeyup="infreq_1a()"-->
                 <td id="res_1a"></td>
             </tr>
             <tr>
                 <td class="turma">1º B Integral</td>
                 <td><input class="qtd-alunos" type="text" id="_1b" value="38" disabled="disabled"></td>
-                <td><input type="text" name="turma_1b" id="1b" placeholder="0"></td>
+                <td><input type="text" id="1b" placeholder="0"></td>
                 <td id="res_1b"></td>
             </tr>
             <tr>
                 <td class="turma">2º A Manhã</td>
                 <td><input class="qtd-alunos" type="text" id="_2a" value="37" disabled="disabled"></td>
-                <td><input type="text" name="turma_2a" id="2a" placeholder="0"></td>
+                <td><input type="text" id="2a" placeholder="0"></td>
                 <td id="res_2a"></td>
             </tr>
             <tr>
                 <td class="turma">3º A Manhã</td>
                 <td><input class="qtd-alunos" type="text" id="_3a" value="37" disabled="disabled"></td>
-                <td><input type="text" name="turma_3a" id="3a" placeholder="0"></td>
+                <td><input type="text" id="3a" placeholder="0"></td>
                 <td id="res_3a"></td>
             </tr>
             <tr>
                 <td class="turma">2º B Tarde</td>
                 <td><input class="qtd-alunos" type="text" id="_2b" value="36" disabled="disabled"></td>
-                <td><input type="text" name="turma_2b" id="2b" placeholder="0"></td>
+                <td><input type="text" id="2b" placeholder="0"></td>
                 <td id="res_2b"></td>
             </tr>
             <tr>
                 <td class="turma">3º B Tarde</td>
                 <td><input class="qtd-alunos" type="text" id="_3b" value="34" disabled="disabled"></td>
-                <td><input type="text" name="turma_3b" id="3b" placeholder="0"></td>
+                <td><input type="text" id="3b" placeholder="0"></td>
                 <td id="res_3b"></td>
             </tr>
             <tr id="linha-totais">
                 <td style="font-weight: bolder;">Total</td>
-                <td id="total"></td>
-                <td id="total-presentes"></td>
-                <td id="total-infrequencia"></td>
+                <td><input type="text" id="total" ></td>
+                <td><input type="text" id="total-presentes" disabled="disabled"></td>
+                <td><input type="text" id="total-infrequencia" disabled="disabled"></td>
             </tr>
         </table>
         
