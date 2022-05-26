@@ -9,7 +9,8 @@ var botao = document.querySelector('#botao');
 botao.addEventListener("click", infreq);
 botao.addEventListener("click", textwhatsapp);
 botao.addEventListener("click", soma);
-botao.addEventListener("click", verificaZero);
+
+//botao.addEventListener("click", verificaZero);
 //botao.addEventListener("dblclick", textwhatsapp);
 
 
@@ -65,25 +66,9 @@ function abrirWhatsapp(){
     window.open('https://web.whatsapp.com/', target='_blank')
 }
 
-//função para verificar se a qtd de aluno presente não for preenchida completar com zero
-function verificaZero(){
-    
-    for(i=0; i<id_alunos.length; i++){
-        var qtd_Presentes = document.getElementById(id_alunos[i]).value;
-        if(qtd_Presentes == ''){
-            qtd_Presentes = 0;
-            qtd_Presentes = parseInt(qtd_Presentes);
-            document.getElementById(id_alunos[i]).innerHTML = 0; 
-            console.log(qtd_Presentes)
-            console.log(typeof(qtd_Presentes));
-            //qtd_Presentes.value = '0';
-            //qtd_Presentes.innerHTML = parseInt(qtd_Presentes);
-
-        }
-    }
-}
 
 
+//FUNÇÃO PARA CALCULAR SOMAS DA TABELA
 
 function soma(){
     var cont = 0;
@@ -107,10 +92,30 @@ function soma(){
     document.querySelector('#total-presentes').innerHTML = cont2;
 
 //laço para calcular soma da infrequência do dia
-    for(i=0; i<id_alunos.length; i++){
     
-        var qtd_alunosInfreq = qtd_alunosTurma - qtd_alunosPresentes;
-        cont3 = cont3 + qtd_alunosInfreq;
-    }
-    document.querySelector('#total-infrequencia').innerHTML = cont3;
+    document.querySelector('#total-infrequencia').innerHTML = cont - cont2;
 }
+
+
+
+/*
+//função para verificar se a qtd de aluno presente não for preenchida completar com zero
+function verificaZero(){
+    
+    for(i=0; i<id_alunos.length; i++){
+        var qtd_Presentes = document.getElementById(id_alunos[i]).value;
+        
+        if(qtd_Presentes == NaN){
+            qtd_Presentes = 0;
+            //qtd_Presentes = parseInt(qtd_Presentes);
+            //document.getElementById(id_alunos[i]).innerHTML = 0; 
+            console.log(qtd_Presentes)
+            console.log(typeof(qtd_Presentes));
+            //qtd_Presentes.value = '0';
+            //qtd_Presentes.innerHTML = parseInt(qtd_Presentes);
+
+        }
+        
+    }
+}
+*/
