@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,8 +10,8 @@ body {
 }
 
 main {
-    padding: 15px 0px;
-    /*height: 75vh;*/
+    
+    min-height: 96vh;
     text-align: center;
 }
 
@@ -36,6 +37,10 @@ header {
 #nome-escola {
     margin-left: 100px;
     color: white;
+}
+
+h2 {
+    padding-top: 25px;
 }
 
 /*TABELA*/
@@ -85,7 +90,7 @@ li {
 }
 
 #area-texto-whats{
-    height: 130px;
+    height: 230px;
 }
 
 input {
