@@ -2,7 +2,7 @@
 var id_alunos = ['1a', '1b', '2a', '3a', '2b', '3b'] //ou var id_alunos = Array()
 var id_turma = ['_1a', '_1b', '_2a', '_3a', '_2b', '_3b']
 var id_resultado = ['res_1a', 'res_1b', 'res_2a', 'res_3a', 'res_2b', 'res_3b']
-var id_porcento = ['pctg_1a', 'pctg_1b', 'pctg_2a', 'pctg_2b', 'pctg_3a', 'pctg_3b']
+var id_porcento = ['pctg_1a', 'pctg_1b', 'pctg_2a', 'pctg_3a', 'pctg_2b', 'pctg_3b']
 
 
 var botao = document.querySelector('#botao');
