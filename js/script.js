@@ -1,16 +1,29 @@
-
 var id_alunos = ['1a', '1b', '2a', '3a', '2b', '3b'] //ou var id_alunos = Array()
 var id_turma = ['_1a', '_1b', '_2a', '_3a', '_2b', '_3b']
 var id_resultado = ['res_1a', 'res_1b', 'res_2a', 'res_3a', 'res_2b', 'res_3b']
 var id_porcento = ['pctg_1a', 'pctg_1b', 'pctg_2a', 'pctg_3a', 'pctg_2b', 'pctg_3b']
 
 
+
 var botao = document.querySelector('#botao');
 
+botao.addEventListener("click", verificaNum);
 botao.addEventListener("click", infreq);
-/*botao.addEventListener("click", textwhatsapp);*/
 botao.addEventListener("click", soma);
 
+
+function verificaNum(){
+    var inputs = document.querySelectorAll('.entrada');
+    let teste = false; 
+    for(j=0; j<inputs.length; j++)
+        if(isNaN(inputs[j].value)){/*método isNaN() verifica se é um número digitado*/
+            teste = true;
+            inputs[j].value = 0;
+        }
+    if(teste == true){
+        alert('Um ou mais valores não são válidos!');
+    }
+}
 
 /*FUNÇÃO PARA CALCULAR INFREQUÊNCIA*/ 
 
@@ -62,7 +75,7 @@ function soma(){
 //Calculart porcentagem total de frequencia DO DIA
     totalPorc = (cont2/cont)*100;     
 
-    document.querySelector('#total-porcento').innerHTML = totalPorc.toFixed(1);    
+    document.querySelector('#total-porcento').innerHTML = totalPorc.toFixed(1);    //toFixed() indica a qtd de casas decimais
 }
 
 
