@@ -3,11 +3,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 120px;
+        height: 180px;
         justify-content: center;
         
     }
-
+    #logo img{
+        padding-bottom: 0.1em;
+    }
     #nome-escola {
         margin:auto;
         text-align: center;

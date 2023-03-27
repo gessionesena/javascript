@@ -79,37 +79,5 @@ function soma(){
 }
 
 
-/*FUNÇÃO PARA CRIAR TEXTO P/ WHATSAPP
-
-function textwhatsapp(){
-    var lista = document.querySelector('#area-texto-whats');/*criando a variavel lista, q corresponde a area do texto a ser gerado
-    var aux = [];
-    
-    for(i=0; i<id_alunos.length; i++){
-        alunos = document.getElementById(id_alunos[i]).value;
-        totalTurma = document.getElementById(id_turma[i]).value;
-        infreq = totalTurma - alunos;
-
-        
-        aux[i] = infreq; /*guardando as infrequencias no array
-        
-        var itemLista = document.createElement('li');/*a cada ciclo um item é criado na lista
-        itemLista.appendChild(document.createTextNode(aux[i]));
-        lista.appendChild(itemLista);
-    
-    }
-    
-    
-}*/
-/*
-var botao_whatsapp = document.querySelector('#botao-whatsapp');
-botao_whatsapp.addEventListener("click", abrirWhatsapp);
-
-FUNÇÃO PARA ABRIR WHATSAPPWEB
-
-function abrirWhatsapp(){
-    window.open('https://web.whatsapp.com/', target='_blank')
-}*/
-
 
 

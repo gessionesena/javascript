@@ -30,7 +30,7 @@ header {
 
 #logo img{
     /*width: 80px;*/
-    height: 80px; 
+    height: 5em; 
     filter: drop-shadow(0 0 3px #fff);
 }
 
@@ -56,6 +56,7 @@ table, th, td {
 }
 td {
     height: 30px;
+    
 }
 
 tr:hover {
@@ -64,7 +65,7 @@ tr:hover {
 
 .header {
     background-color: rgba(55, 172, 61, 0.966);
-    font-size: 1em;
+    font-size: 80%;
     color: #fff;
     padding: 7px 0px;
 }
@@ -75,7 +76,7 @@ tr:hover {
     background-color: rgba(125, 214, 130, 0.966);
     padding: 5px;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -111,7 +112,7 @@ input.qtd-alunos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
+    padding-top: 3rem;
 }
 
 button {
